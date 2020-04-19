@@ -28,7 +28,7 @@ email_req = sess.post('http://anonymouse.org/cgi-bin/anon-email.cgi', headers={
 	'to': to,
 	'subject': subject,
 	'text': message
-})
+}
 
 if 'The e-mail has been sent' in email_req.text:
     print("[+] Email Sent!")
